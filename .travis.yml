@@ -10,13 +10,12 @@ install:
 - npm install
 - node ./addHomepageToPackage.js
 script:
-- cd gol_ui
 - npm run build
 deploy:
   provider: pages
   skip-cleanup: true
   github-token: "$GITHUB_TOKEN"
-  local-dir: "./gol_ui/build"
+  local-dir: "./build"
   on:
     branch: master
   target-branch: gh-pages
