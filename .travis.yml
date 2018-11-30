@@ -4,10 +4,10 @@ node_js:
 - '10.2'
 sudo: enabled
 install:
-- npm install
 - git clone $GOL_UI gol_ui
 - mv src gol_ui/_src
 - cd gol_ui
+- npm install
 - node ./addHomepageToPackage.js
 script:
 - cd gol_ui
