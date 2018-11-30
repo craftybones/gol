@@ -17,7 +17,7 @@ deploy:
   provider: pages
   skip-cleanup: true
   github-token: "$GITHUB_TOKEN"
-  local-dir: "./build"
+  local-dir: "./gol_ui/build"
   on:
     branch: master
   target-branch: gh-pages
