@@ -5,6 +5,8 @@ node_js:
 sudo: enabled
 install:
 - git clone $GOL_UI gol_ui
+- pwd
+- ls
 - mv src gol_ui/_src
 - cd gol_ui
 - npm install
